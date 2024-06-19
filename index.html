@@ -126,18 +126,19 @@
 							<script type="text/javascript">
 								var versionNumber = '10.0.0';
 								var versionFiles = {
-									linux64 : 'https://www.eclipse.org/downloads/download.php?file=/tracecompass/releases/10.0.0/rcp/trace-compass-10.0.0-20240614-1926-linux.gtk.x86_64.tar.gz',
-									win64 : 'https://www.eclipse.org/downloads/download.php?file=/tracecompass/releases/10.0.0/rcp/trace-compass-10.0.0-20240614-1926-win32.win32.x86_64.zip',
-									osx64 : 'https://www.eclipse.org/downloads/download.php?file=/tracecompass/releases/10.0.0/rcp/trace-compass-10.0.0-20240614-1926-macosx.cocoa.x86_64.dmg'
+									linux64x86 : 'https://www.eclipse.org/downloads/download.php?file=/tracecompass/releases/10.0.0/rcp/trace-compass-10.0.0-20240614-1926-linux.gtk.x86_64.tar.gz',
+									win64x86 : 'https://www.eclipse.org/downloads/download.php?file=/tracecompass/releases/10.0.0/rcp/trace-compass-10.0.0-20240614-1926-win32.win32.x86_64.zip',
+									osx64x86 : 'https://www.eclipse.org/downloads/download.php?file=/tracecompass/releases/10.0.0/rcp/trace-compass-10.0.0-20240614-1926-macosx.cocoa.x86_64.dmg',
+									osx64arm : 'https://www.eclipse.org/downloads/download.php?file=/tracecompass/releases/10.0.0/rcp/trace-compass-10.0.0-20240614-1926-macosx.cocoa.aarch64.dmg'
 								};
 
 								var parser = new UAParser();
 								var os = parser.getOS()['name'];
 								var cpu = parser.getCPU()['architecture'];
 								var versionOs = 'Linux';
-								var versionArch = '64-bit';
+								var versionArch = '64-bit x86';
 								var idOs = 'linux';
-								var idArch = '64';
+								var idArch = '64x86';
 
 								switch (os) {
 								case 'CentOS':
@@ -168,9 +169,13 @@
 
 								switch (cpu) {
 								case 'amd64':
+									idArch = '64x86';
+									versionArch = '64-bit x86';
+									break;
+
 								case 'arm64':
-									idArch = '64';
-									versionArch = '64-bit';
+									idArch = '64arm';
+									versionArch = '64-bit ARM';
 									break;
 
 								case 'arm':
@@ -473,9 +478,9 @@
 							</i>
 						</div>
 						<div class="price-btn">
-							<a title="Linux, 64-bit"
+							<a title="Linux, 64-bit x86"
 								href="https://www.eclipse.org/downloads/download.php?file=/tracecompass/releases/10.0.0/rcp/trace-compass-10.0.0-20240614-1926-linux.gtk.x86_64.tar.gz">
-								<button class="outline-btn">64-bit</button>
+								<button class="outline-btn">64-bit x86</button>
 							</a>
 						</div>
 					</div>
@@ -491,9 +496,9 @@
 							</i>
 						</div>
 						<div class="price-btn">
-							<a title="Windows, 64-bit"
+							<a title="Windows, 64-bit x86"
 								href="https://www.eclipse.org/downloads/download.php?file=/tracecompass/releases/10.0.0/rcp/trace-compass-10.0.0-20240614-1926-win32.win32.x86_64.zip">
-								<button class="outline-btn">64-bit</button>
+								<button class="outline-btn">64-bit x86</button>
 							</a>
 						</div>
 					</div>
@@ -509,9 +514,15 @@
 							</i>
 						</div>
 						<div class="price-btn">
-							<a title="OS X, 64-bit"
+							<a title="OS X, 64-bit x86"
 								href="https://www.eclipse.org/downloads/download.php?file=/tracecompass/releases/10.0.0/rcp/trace-compass-10.0.0-20240614-1926-macosx.cocoa.x86_64.dmg">
-								<button class="outline-btn">64-bit</button>
+								<button class="outline-btn">64-bit x86</button>
+							</a>
+						</div>
+						<div class="price-btn">
+							<a title="OS X, 64-bit ARM"
+								href="https://www.eclipse.org/downloads/download.php?file=/tracecompass/releases/10.0.0/rcp/trace-compass-10.0.0-20240614-1926-macosx.cocoa.aarch64.dmg">
+								<button class="outline-btn">64-bit ARM</button>
 							</a>
 						</div>
 					</div>
