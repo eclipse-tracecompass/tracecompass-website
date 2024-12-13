@@ -43,11 +43,11 @@ For issues related to the Trace Compass website, please open a GitHub tracker fo
 [code-of-conduct]: https://github.com/eclipse/.github/blob/master/CODE_OF_CONDUCT.md
 [commiter-handbook]: https://www.eclipse.org/projects/handbook/#resources-commit
 [dev-process]: https://eclipse.org/projects/dev_process
-[eca]: http://www.eclipse.org/legal/ECA.php
+[eca]: http://www.eclipse.org/legal/eca
 [ip-policy]: https://www.eclipse.org/org/documents/Eclipse_IP_Policy.pdf
 [issues]: https://github.com/eclipse-tracecompass/tracecompass-website/issues
 [mailing-list]: https://accounts.eclipse.org/mailing-list/tracecompass-dev
 [pr-guide]: #pull-request-guidelines
 [pull-requests]: https://github.com/eclipse-tracecompass/tracecompass-website/pulls
-[terms]: https://www.eclipse.org/legal/termsofuse.php
+[terms]: https://www.eclipse.org/legal/terms-of-use/
 [website]: https://github.com/eclipse-tracecompass/tracecompass-website
